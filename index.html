@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Acme Corp — Soluções Digitais Modernas</title>
+    <meta name="description" content="Soluções digitais modernas para empresas que querem crescer com tecnologia, design e performance." />
+
+    <meta property="og:title" content="Acme Corp — Soluções Digitais Modernas" />
+    <meta property="og:description" content="Soluções digitais modernas para empresas que querem crescer com tecnologia, design e performance." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a href="#hero" class="logo" aria-label="Página inicial">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Acme Corp</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+          <ul id="menu" class="nav__list">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato" class="btn btn--sm">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1) Primeira seção: Hero -->
+      <section id="hero" class="section hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1>
+              Acelere seu crescimento com soluções digitais elegantes e eficientes
+            </h1>
+            <p class="subtitle">
+              Estratégia, design e tecnologia para empresas que querem ir além.
+            </p>
+            <div class="actions">
+              <a href="#contato" class="btn btn--primary">Começar projeto</a>
+              <a href="#portfolio" class="btn btn--ghost">Ver portfólio</a>
+            </div>
+          </div>
+          <div class="hero__media" aria-hidden="true">
+            <div class="orb orb--1"></div>
+            <div class="orb orb--2"></div>
+            <div class="hero__card">
+              <div class="hero__card-row">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="hero__card-body">
+                <div class="metric">
+                  <span class="metric__label">+120 projetos</span>
+                  <span class="metric__value">entregues</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__label">98% satisfação</span>
+                  <span class="metric__value">dos clientes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2) Segunda seção: Carrossel de imagens -->
+      <section id="portfolio" class="section section--alt carousel-section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Portfólio em destaque</h2>
+            <p>Alguns trabalhos recentes que entregamos com foco em resultado.</p>
+          </div>
+
+          <div class="carousel" data-autoplay="true" data-interval="4500">
+            <div class="carousel__track">
+              <div class="carousel__slide is-active">
+                <img src="https://picsum.photos/seed/branding/1200/600" alt="Projeto de branding e identidade visual" />
+                <div class="carousel__caption">
+                  <h3>Branding & Identidade</h3>
+                  <p>Reposicionamento de marca com impacto.</p>
+                </div>
+              </div>
+              <div class="carousel__slide">
+                <img src="https://picsum.photos/seed/website/1200/600" alt="Website institucional responsivo" />
+                <div class="carousel__caption">
+                  <h3>Website Responsivo</h3>
+                  <p>Velocidade, acessibilidade e SEO de ponta.</p>
+                </div>
+              </div>
+              <div class="carousel__slide">
+                <img src="https://picsum.photos/seed/app/1200/600" alt="Aplicativo mobile moderno" />
+                <div class="carousel__caption">
+                  <h3>Aplicativo Mobile</h3>
+                  <p>Experiência fluida para iOS e Android.</p>
+                </div>
+              </div>
+              <div class="carousel__slide">
+                <img src="https://picsum.photos/seed/ecommerce/1200/600" alt="Loja virtual de alta conversão" />
+                <div class="carousel__caption">
+                  <h3>E-commerce</h3>
+                  <p>Conversão e escala sem abrir mão do design.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel__control prev" aria-label="Anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel__control next" aria-label="Próximo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="carousel__dots" aria-label="Paginação do carrossel"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section about">
+        <div class="container grid-two">
+          <div>
+            <h2>Sobre nós</h2>
+            <p>
+              Somos uma equipe multidisciplinar apaixonada por resolver problemas reais através de tecnologia e design. Unimos estratégia, pesquisa e execução para entregar produtos que as pessoas amam usar.
+            </p>
+            <ul class="list">
+              <li>Abordagem orientada a dados</li>
+              <li>Processo colaborativo e transparente</li>
+              <li>Foco em performance e acessibilidade</li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <h3>O que nos guia</h3>
+            <p>Excelência, agilidade e impacto mensurável em cada entrega.</p>
+            <div class="stats">
+              <div class="stat"><span class="stat__value">10+</span><span class="stat__label">anos no mercado</span></div>
+              <div class="stat"><span class="stat__value">25</span><span class="stat__label">especialistas</span></div>
+              <div class="stat"><span class="stat__value">8</span><span class="stat__label">países atendidos</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="section section--alt services">
+        <div class="container">
+          <div class="section__head">
+            <h2>Serviços</h2>
+            <p>Do planejamento à execução, cobrimos todo o ciclo do seu produto.</p>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">💡</div>
+              <h3>Estratégia & Produto</h3>
+              <p>Descoberta, roadmap e métricas para guiar decisões com confiança.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🎨</div>
+              <h3>Design UX/UI</h3>
+              <p>Interfaces acessíveis e bonitas que convertem e fidelizam usuários.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">⚙️</div>
+              <h3>Engenharia</h3>
+              <p>Web, mobile e integrações robustas com alta qualidade.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🚀</div>
+              <h3>Crescimento</h3>
+              <p>SEO, performance e experimentação orientada a resultados.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section cta">
+        <div class="container cta__inner">
+          <div>
+            <h2>Pronto para dar o próximo passo?</h2>
+            <p>Conte rapidamente sobre seu projeto e retornamos em até 24h.</p>
+          </div>
+          <form class="form" onsubmit="event.preventDefault(); alert('Obrigado! Entraremos em contato em breve.');">
+            <div class="form__row">
+              <input type="text" name="nome" placeholder="Seu nome" required />
+              <input type="email" name="email" placeholder="Seu e-mail" required />
+            </div>
+            <textarea name="mensagem" rows="4" placeholder="Fale sobre o seu desafio"></textarea>
+            <button type="submit" class="btn btn--primary btn--full">Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Acme Corp. Todos os direitos reservados.</p>
+        <a href="#hero" class="back-to-top" aria-label="Voltar ao topo">▲</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
